@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
 
         //Numbering
 
-    tvOne.setOnClickListener { appendOnExpression("1", true) }
-     tvTwo.setOnClickListener { appendOnExpression("2", true) }
-    tvThree.setOnClickListener { appendOnExpression("3", true) }
+        tvOne.setOnClickListener { appendOnExpression("1", true) }
+        tvTwo.setOnClickListener { appendOnExpression("2", true) }
+        tvThree.setOnClickListener { appendOnExpression("3", true) }
         tvFour.setOnClickListener { appendOnExpression("4", true) }
         tvFive.setOnClickListener { appendOnExpression("5", true) }
         tvSix.setOnClickListener { appendOnExpression("6", true) }
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         tvDel.setOnClickListener {
-            val expression = tvExpression.toString()
+            val expression = tvExpression.text.toString()
             if(expression.isNotEmpty()){
                 tvExpression.text = expression.substring(0, expression.length-1)
             }
